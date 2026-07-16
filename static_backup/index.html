@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ark Advisory | Precision & Financial Security</title>
+    <meta name="description" content="Ark offers integrated accounting and tax solutions designed to help businesses grow sustainably and comply with financial regulations.">
+    <!-- Google Fonts - Inter & Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Progress Scroll Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo removed as requested -->
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">services <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tax.html">tax</a></li>
+                            <li><a href="audit.html">auditing</a></li>
+                            <li><a href="consulting.html">Financial Consulting</a></li>
+                            <li><a href="formation.html">Company Formation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#industries" class="nav-link">industries</a></li>
+                    <li><a href="consultation.html" class="nav-link">Book Consultation</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="consultation.html" class="btn btn-primary nav-cta">Free Consultation</a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero-section">
+
+        <!-- ── Slider Backgrounds ── -->
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active" style="background-image: url('hero.png.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('hero.png2.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('hero.png3.jpeg');"></div>
+        </div>
+
+        <!-- ── Overlay ── -->
+        <div class="hero-overlay"></div>
+
+        <!-- ── Content ── -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-in">
+                    <span class="badge-dot"></span>
+                    Your Certified Financial Advisors
+                </div>
+                <h1 class="hero-title animate-slide-up">
+                    Precision in Numbers, <br>
+                    <span class="highlight">Security in Decisions</span>
+                </h1>
+                <p class="hero-subtitle animate-slide-up-delay">
+                    We provide comprehensive accounting and tax solutions designed to help businesses grow sustainably, protect assets, and ensure full compliance with official tax and customs regulations.
+                </p>
+                <div class="hero-buttons animate-slide-up-delay-more">
+                    <a href="consultation.html" class="btn btn-primary btn-large">Free Consultation <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#services" class="btn btn-secondary btn-large">Our Services</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Slider Controls ── -->
+        <button class="hero-arrow hero-arrow-prev" id="heroPrev" aria-label="Previous slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="hero-arrow hero-arrow-next" id="heroNext" aria-label="Next slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- ── Dots ── -->
+        <div class="hero-dots" id="heroDots">
+            <span class="hero-dot active" data-index="0"></span>
+            <span class="hero-dot" data-index="1"></span>
+            <span class="hero-dot" data-index="2"></span>
+        </div>
+
+        <!-- ── Scroll Down indicator ── -->
+        <a href="#about" class="scroll-down">
+            <span class="scroll-mouse">
+                <span class="scroll-wheel"></span>
+            </span>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- Core Values / Why Us -->
+    <section id="about" class="why-us-section">
+        <div class="container">
+            <div class="section-header ">
+                <span class="sub-title">Why Ark?</span>
+                <h2>What Sets Our Advisory Apart</h2>
+                <div class="header-line"></div>
+                <p class="section-desc">
+ARK Accounting is an accounting and auditing firm providing professional services in accounting, auditing, taxation, and financial consulting, in accordance with applicable professional standards and regulations.
+We see the quality of financial information as the foundation on which sound decisions are built. That's why, on every engagement we take on, we make sure our work is precise, and that we genuinely understand the nature of the client's business before offering any opinion or report.
+This understanding is what sets our work apart, and what makes our services a real aid to business owners in the decisions they make every day.
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries" class="industries-section">
+        <div class="container">
+           <div class="section-header">
+                <span class="sub-title">industries</span>
+                <h2>Sectors We Serve</h2>
+                <p class="section-desc">We provide our services to clients across a wide range of sectors, including:</p>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="industries-grid">
+                <!-- Sector 1: E-commerce -->
+                <div class="industry-card " style="background-image: url('e-commerce.png.png');">
+                    <div class="industry-card-overlay"></div>
+                    <div class="industry-card-content">
+                        <div class="industry-card-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h3>E-Commerce</h3>
+                        <p>Specialized VAT, tax accounting, and e-invoice integration for digital storefronts and marketplaces.</p>
+                    </div>
+                </div>
+
+                <!-- Sector 2: Manufacturing -->
+                <div class="industry-card " style="background-image: url('manufacture.png.jpeg');">
+                    <div class="industry-card-overlay"></div>
+                    <div class="industry-card-content">
+                        <div class="industry-card-icon">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <h3>Manufacturing</h3>
+                        <p>Cost accounting, inventory valuation, audit prep, and regulatory compliance for production lines.</p>
+                    </div>
+                </div>
+
+                <!-- Sector 3: Construction & Real Estate -->
+                <div class="industry-card " style="background-image: url('construction.png.jpeg');">
+                    <div class="industry-card-overlay"></div>
+                    <div class="industry-card-content">
+                        <div class="industry-card-icon">
+                            <i class="fa-solid fa-trowel-bricks"></i>
+                        </div>
+                        <h3>Construction & Real Estate</h3>
+                        <p>Project cashflow advisory, Zakat base calculations, and subcontracting cost controls.</p>
+                    </div>
+                </div>
+
+                <!-- Sector 4: Restaurants & Cafes -->
+                <div class="industry-card " style="background-image: url('resturant.png.png');">
+                    <div class="industry-card-overlay"></div>
+                    <div class="industry-card-content">
+                        <div class="industry-card-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3>Restaurants & Cafés</h3>
+                        <p>Point of Sale (POS) cloud integrations, staff payroll control, and daily ledger bookkeeping.</p>
+                    </div>
+                </div>
+
+                <!-- Sector 5: Tourism & Hospitality -->
+                <div class="industry-card " style="background-image: url('tourism.png.jpeg');">
+                    <div class="industry-card-overlay"></div>
+                    <div class="industry-card-content">
+                        <div class="industry-card-icon">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <h3>Tourism & Hospitality</h3>
+                        <p>Financial consulting, seasonal budgeting, cash management, and VAT refunds facilitation.</p>
+                    </div>
+                </div>
+
+                <!-- Sector 6: Import & Export -->
+                <div class="industry-card " style="background-image: url('import.png.png');">
+                    <div class="industry-card-overlay"></div>
+                    <div class="industry-card-content">
+                        <div class="industry-card-icon">
+                            <i class="fa-solid fa-ship"></i>
+                        </div>
+                        <h3>Import & Export</h3>
+                        <p>Customs duty tax planning, international transfer compliance, and currency risk mitigation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <!-- Brand Section -->
+            <div class="footer-section footer-brand-section">
+                <a href="#" class="logo">
+                    <img src="logo.png" alt="Ark Logo" class="footer-logo-img">
+                    <span class="brand-name">ARK</span>
+                </a>
+                <p class="footer-tagline">Precision in Numbers,<br>Security in Decisions</p>
+            </div>
+            
+            <hr class="footer-divider">
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Quick links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about us</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#">industries</a></li>
+                    <li><a href="#contact">contact us</a></li>
+                </ul>
+            </div>
+
+            <hr class="footer-divider">
+
+            <!-- Services Section -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Tax</a></li>
+                    <li><a href="#services">Auditing</a></li>
+                    <li><a href="#services">Financial Consulting</a></li>
+                    <li><a href="#services">Company Formation</a></li>
+                </ul>
+            </div>
+
+            <hr class="footer-divider">
+
+            <!-- Contact Us Section -->
+            <div class="footer-section">
+                <h4 class="footer-heading">contact us</h4>
+                <div class="footer-contact-info">
+                    <p><i class="fa-solid fa-phone"></i> +20 10 12510242</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@ark-advisory.com</p>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <!-- Follow Us Section -->
+            <div class="footer-section">
+                <h4 class="footer-heading">follow us</h4>
+                <div class="footer-social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61591473336414&locale=ar_AR" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/135185222/admin/analytics/followers/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ark Accounting & Tax Advisory. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/201000000000" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

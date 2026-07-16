@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #0F172A;
+  --color-navy-light: #1E293B;
+  --color-gold: #C9A227;
+  --color-gold-hover: #B28F1F;
+  --color-gold-light: #ECD0A5;
+  --color-beige: #F7F4EF;
+  --color-beige-glow: #FCFBF8;
+  --color-beige-edges: #F2ECE3;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94A3B8;
+  --color-glass-border: rgba(15, 23, 42, 0.06);
+  --color-white: #FFFFFF;
+  --color-green: #16A34A;
+  --font-sans: var(--font-inter);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at 50% 50%, var(--color-beige-glow) 0%, var(--color-beige) 60%, var(--color-beige-edges) 100%);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--color-beige); }
+::-webkit-scrollbar-thumb { background: var(--color-gold); border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-gold-hover); }
+
+/* Gold gradient text */
+.gold-gradient-text {
+  background: linear-gradient(120deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
