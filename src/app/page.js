@@ -1,7 +1,6 @@
 "use client";
-
-import IndustriesSection from "@/components/IndustriesSection";
-import { FaWhatsapp } from "react-icons/fa";
+import SectorsSection from "../components/SectorsSection";
+import { useLanguage } from "../context/LanguageContext";
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,22 +13,17 @@ const fadeUp = {
 };
 
 export default function HomePage() {
+  const { t } = useLanguage();
   return (
     <>
-      {/* WhatsApp Button */}
-      <a
-        href="https://wa.me/201012510242"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300"
-      >
-        <FaWhatsapp className="text-white text-3xl" />
-      </a>
       {/* ── HERO SECTION ── */}
       <section id="home" className="relative w-full h-screen min-h-[600px] overflow-hidden">
         <div className="absolute inset-0">
+
           <Image src="/hero.png.jpeg" alt="Ark Advisory" fill className="object-cover" priority />
-          <div className="absolute inset-0 bg-navy/60" />
+          <div className="absolute inset-0 bg-black/30 z-[1]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-[1]" />
+
         </div>
 
         <div className="relative z-10 h-full flex items-center">
@@ -37,25 +31,21 @@ export default function HomePage() {
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-2xl">
               <div className="inline-flex items-center gap-2.5 px-4 py-1.5 bg-gold/15 border border-gold/25 rounded-full text-gold text-sm font-bold mb-6">
                 <span className="w-2 h-2 bg-gold rounded-full shadow-[0_0_8px_var(--color-gold)]" />
-                Ark Advisory Office
+
+                {t("hero_badge")}
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-5">
-  Precise Numbers
+  {t("hero_title_line1")}
   <br />
-  <span className="gold-gradient-text">Trusted Decisions</span>
+  <span className="gold-gradient-text">{t("hero_title_line2")}</span>
 </h1>
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed max-w-xl">
-                Empowering businesses with cutting-edge accounting, tax, and financial advisory services across all industries.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/consultation" className="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-gold to-gold-hover text-navy font-bold rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
-                  Book Free Consultation
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </Link>
-                <Link href="/#about" className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white/30 text-white font-semibold rounded-lg hover:border-gold hover:text-gold transition-all">
-                  Learn More
-                </Link>
-              </div>
+             
+<div className="flex flex-wrap gap-4">
+  <Link href="/consultation" className="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-gold to-gold-hover text-white font-bold rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
+    {t("hero_cta_primary")}
+    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </Link>
+</div>
             </motion.div>
           </div>
         </div>
@@ -65,22 +55,48 @@ export default function HomePage() {
       <section id="about" className="py-16">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center mb-10">
-            <span className="text-gold font-bold text-sm uppercase tracking-wider">Why Ark?</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-navy mt-2">What Sets Our Advisory Apart</h2>
+            <span className="text-gold font-bold text-sm uppercase tracking-wider">{t("why_us_label")}</span>
+            
             <div className="w-16 h-1 bg-gold mx-auto mt-4 rounded" />
             <p
               className="text-text-secondary mt-6 max-w-5xl mx-auto px-6 leading-8 text-lg"
               style={{ textAlign: "justify" }}
             >
-              ARK Accounting is an accounting and auditing firm providing professional services in accounting, auditing, taxation, and financial consulting, in accordance with applicable professional standards and regulations.
-              We see the quality of financial information as the foundation on which sound decisions are built. That's why, on every engagement we take on, we make sure our work is precise, and that we genuinely understand the nature of the client's business before offering any opinion or report.
-              This understanding is what sets our work apart, and what makes our services a real aid to business owners in the decisions they make every day.
+              {t("why_us_text")}
             </p>
+
+            <div className="text-center mt-8">
+              <Link href="/about" className="inline-block bg-[#C8A74E] text-white px-10 py-4 rounded-full font-semibold hover:bg-[#b38b2d] transition">
+                {t("why_us_cta")}
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      <IndustriesSection />
+      {/* ── SECTORS SECTION ── */}
+     <section className="bg-[#F0EAD9] py-24">
+        <div className="max-w-5xl mx-auto text-center px-6">
+          <p className="uppercase tracking-[4px] text-[#C9A14A] font-semibold">
+         {t("sectors_badge")}
+          </p>
+
+          <h2 className="text-4xl font-bold text-black mt-6">
+           {t("sectors_title")}
+          </h2>
+
+          <p className="text-text-secondary mt-8 text-lg leading-8 max-w-3xl mx-auto">
+           {t("sectors_description")}
+          </p>
+
+          <a
+            href="/about"
+            className="inline-block mt-10 bg-[#C9A14A] text-white px-10 py-4 rounded-full font-semibold hover:bg-[#b38b2d] transition"
+          >
+           {t("sectors_cta")}
+          </a>
+        </div>
+      </section>
 
     </>
   );

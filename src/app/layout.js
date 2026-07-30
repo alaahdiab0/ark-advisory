@@ -1,8 +1,14 @@
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+
+
+
+
+import FloatingWhatsApp from "../components/FloatingWhatsApp";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { LanguageProvider } from "../context/LanguageContext";
 import { Inter, Cairo } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,20 +21,23 @@ const cairo = Cairo({
   variable: "--font-cairo",
   display: "swap",
 });
+
 export const metadata = {
-  title: "Ark Advisory | Precision & Financial Security",
+  title: "ARK Accounting | Accounting, Audit & Tax Advisory in Egypt",
   description:
-    "Ark offers integrated accounting and tax solutions designed to help businesses grow sustainably and comply with financial regulations.",
+    "ARK Accounting provides accounting, auditing, tax, and financial consulting services across diverse industries in Egypt — precision in numbers, security in decisions.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" dir="ltr" className={`${inter.variable} ${cairo.variable}`}>
+    <html lang="en" dir="ltr" className={`${inter.variable} ${cairo.variable}`} suppressHydrationWarning>
       <body className="antialiased">
-        <Navbar />
-        <main>{children}</main>
+        <LanguageProvider>
+          <Navbar />
+          <main>{children}</main>
           <FloatingWhatsApp />
-        <Footer />
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
