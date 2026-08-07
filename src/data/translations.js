@@ -60,10 +60,10 @@ form_success: "✓ Thank you! Your consultation has been booked. We'll contact y
 form_error: "✗ Please fill in all required fields.",
     
 
-  sectors_badge: "Our Sectors",
-  sectors_title: "Sectors We Serve",
+  sectors_badge: " Sectors",
+  sectors_title: "A Wide Range of Industries",
   sectors_description: "We treat the differences between industries as a starting point, not an obstacle — what works for a retail company may not suit a contracting firm or a tourism business. We serve clients across diverse sectors, from trade and manufacturing to tourism, pharmaceuticals, and more, with an approach that respects the unique nature of each sector.",
-  sectors_cta: "Read More",
+  
 
 
 consultation_hero_title_line1: "Book a Free Accounting",
@@ -373,7 +373,7 @@ privacy_contact_text: "If you have any questions about this Privacy Policy or ho
 
 footer_tagline: "Precision in Numbers, Trusted Decisions",
 footer_contact_title: "Contact Us",
-footer_phone: "+20 102 1024 125",
+footer_phone: "+20 10 12510242",
 footer_email: "asmaa.abdelsalam@ark-accounting.org",
 footer_follow_title: "Follow Us",
 footer_services_title: "Services",
@@ -395,6 +395,14 @@ service_tax: "Tax",
 service_audit: "Audit",
 service_consulting: "Consulting",
 service_formation: "Company Formation",
+
+services_badge: "Our Services",
+services_heading: "Comprehensive Accounting & Financial Services",
+services_audit: "Audit",
+services_tax: "Tax",
+services_consulting: "Financial Consulting",
+services_formation: "Company Formation",
+services_subheading: "We provide a comprehensive range of accounting, tax, and consulting services, helping companies manage their business efficiently and comply with financial and tax requirements."
 
 
 
@@ -459,8 +467,8 @@ form_submitting: "جاري الإرسال...",
 form_success: "✓ شكرًا لك! تم حجز استشارتك بنجاح. سنتواصل معك خلال 24 ساعة.",
 form_error: "✗ يرجى ملء جميع الحقول المطلوبة.",
 
- sectors_badge: "قطاعاتنا",
-  sectors_title: "القطاعات التي نخدمها",
+ sectors_badge: "القطاعات",
+  sectors_title: "نخدم قطاعات متنوعة",
   sectors_description: "نتعامل مع اختلاف طبيعة كل نشاط باعتباره نقطة انطلاق، لا عائقًا، فما يناسب شركة تجزئة قد لا يناسب شركة مقاولات أو منشأة سياحية.نقدم خدماتنا لعملاء من قطاعات متنوعة، من التجارة والصناعة إلى السياحة والأدوية وغيرها، بما يراعي خصوصية كل قطاع على حدة.",
 
   sectors_cta: "اقرأ المزيد",
@@ -806,5 +814,12 @@ service_audit: "المراجعة",
 service_consulting: "الاستشارات المالية",
 service_formation: "تأسيس الشركات",
 
+services_badge: "خدماتنا",
+services_heading: "خدمات محاسبية ومالية متكاملة",
+services_audit: "المراجعة",
+services_tax: "الضرائب",
+services_consulting: "الاستشارات المالية",
+services_formation: "تأسيس الشركات",
+services_subheading: "نقدم مجموعة متكاملة من الخدمات المحاسبية والضريبية والاستشارية، لمساعدة الشركات على إدارة أعمالها بكفاءة والالتزام بالمتطلبات المالية والضريبية."
   },
 };

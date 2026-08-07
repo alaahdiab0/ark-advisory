@@ -12,7 +12,7 @@ export async function POST(request) {
     }
 
     await resend.emails.send({
-      from: 'Ark Advisory Website <onboarding@resend.dev>',
+      from:  'Ark Advisory Website <noreply@ark-accounting.org>',
       to: 'asmaa.abdelsalam@ark-accounting.org',
       subject: `طلب استشارة جديد من ${name} - Ark Advisory`,
       html: `

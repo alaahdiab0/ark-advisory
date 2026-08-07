@@ -1,4 +1,5 @@
 "use client";
+import Services from "@/components/Services"; 
 import SectorsSection from "../components/SectorsSection";
 import { useLanguage } from "../context/LanguageContext";
 import { useState, useEffect, useCallback } from "react";
@@ -73,31 +74,12 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
+      <Services />
 
       {/* ── SECTORS SECTION ── */}
-     <section className="bg-[#F0EAD9] py-24">
-        <div className="max-w-5xl mx-auto text-center px-6">
-          <p className="uppercase tracking-[4px] text-[#C9A14A] font-semibold">
-         {t("sectors_badge")}
-          </p>
-
-          <h2 className="text-4xl font-bold text-black mt-6">
-           {t("sectors_title")}
-          </h2>
-
-          <p className="text-text-secondary mt-8 text-lg leading-8 max-w-3xl mx-auto">
-           {t("sectors_description")}
-          </p>
-
-          <a
-            href="/about"
-            className="inline-block mt-10 bg-[#C9A14A] text-white px-10 py-4 rounded-full font-semibold hover:bg-[#b38b2d] transition"
-          >
-           {t("sectors_cta")}
-          </a>
-        </div>
-      </section>
-
+     
+          
+<SectorsSection />
     </>
   );
 }
