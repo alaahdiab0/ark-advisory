@@ -8,8 +8,8 @@ const quickLinks = [
   { key: "footer_link_home", href: "/#home" },
   { key: "footer_link_about", href: "/#about" },
   { key: "footer_link_services", href: "/#services" },
-  { key: "footer_link_industries", href: "/#industries" },
-  { key: "footer_link_contact", href: "/#contact" },
+  { key: "footer_link_industries", href: "/industries" },
+  { key: "footer_link_contact", href: "/contact" },
 ];
 
 const serviceLinks = [
@@ -74,9 +74,9 @@ export default function Footer() {
               <svg className="w-6 h-6 text-gold shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/></svg>
                <span dir="ltr">{t("footer_phone")}</span>
             </p>
-            <p className="flex items-center gap-2.5">
-  <svg className="w-6 h-6 text-gold shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
- <span dir="ltr" className="whitespace-nowrap text-[11px] sm:text-xs lg:text-sm">{t("footer_email")}</span>
+            <p className="flex items-start sm:items-center gap-2.5">
+  <svg className="w-6 h-6 text-gold shrink-0 mt-0.5 sm:mt-0" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+  <span dir="ltr" className="text-[11px] sm:text-xs lg:text-sm break-all">{t("footer_email")}</span>
 </p>
           </div>
           <h4 className="text-gold font-bold text-lg mb-3 capitalize">{t("footer_follow_title")}</h4>
