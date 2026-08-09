@@ -20,7 +20,7 @@ export const translations = {
 
     why_us_label: "Why Ark?",
   
-    why_us_text: "ARK Accounting is an accounting and auditing firm, providing services in accounting, auditing, tax, and financial consulting, in accordance with applicable professional standards and regulations. We believe that the quality of financial information is the foundation on which sound decisions are built, and that's why we ensure our services are precise, with a genuine understanding of each client's business before offering any opinion or report.",
+    why_us_text: "ARK Accounting  Accounting is an accounting and financial consulting firm, in accordance with applicable professional standards and regulations. We believe that the quality of financial information is the foundation on which sound decisions are built, and that's why we ensure our services are precise, with a genuine understanding of each client's business before offering any opinion or report.",
 why_us_cta: "Read Our Full Story",
 
 
@@ -370,7 +370,7 @@ privacy_changes_text: "We may update this Privacy Policy periodically. Any chang
 privacy_contact_title: "8. Contact Us",
 privacy_contact_text: "If you have any questions about this Privacy Policy or how your data is handled, please contact us at",
 
-
+footer_brand: "ARK Accounting ",
 footer_tagline: "Precision in Numbers, Trusted Decisions",
 footer_contact_title: "Contact Us",
 footer_phone: "+20 10 12510242",
@@ -402,9 +402,22 @@ services_audit: "Audit",
 services_tax: "Tax",
 services_consulting: "Financial Consulting",
 services_formation: "Company Formation",
-services_subheading: "We provide a comprehensive range of accounting, tax, and consulting services, helping companies manage their business efficiently and comply with financial and tax requirements."
+services_subheading: "We provide a comprehensive range of accounting, tax, and consulting services, helping companies manage their business efficiently and comply with financial and tax requirements.",
 
 
+contact_title: "Contact Us",
+contact_intro: "For inquiries or to request more information about our services, you can reach us by phone, WhatsApp, or Facebook. You can also send your message directly through the contact form, and we will respond to you as soon as possible.",
+contact_address: "Head Office: [Address here]",
+contact_hotline: "Hotline: 19818",
+contact_social_title: "Follow Us",
+contact_form_title: "Questions? Get in touch.",
+contact_form_subtitle: "Enter your details and message below and we'll get in touch within 24h.",
+contact_form_name: "Name",
+contact_form_email: "Email",
+contact_form_message: "Message",
+contact_form_submit: "Submit",
+contact_form_sending: "Sending...",
+contact_form_sent: "Sent successfully",
 
   },
   ar: {
@@ -419,16 +432,18 @@ services_subheading: "We provide a comprehensive range of accounting, tax, and c
     nav_consultation: "احجز استشارة",
     nav_contact: "تواصل معنا",
 
-    hero_badge: "ARK Accounting",
+    hero_badge: "ارك اكونتينج",
     hero_title_line1: "أرقام دقيقة.",
     hero_title_line2: "قرارات موثوقة.",
     hero_subtitle: "نمكّن الشركات بخدمات محاسبية وضريبية واستشارية متطورة في جميع القطاعات.",
     hero_cta_primary: "احجز استشارة مجانية",
     
 
-    why_us_label: "لماذا ARK Accounting؟",
+    why_us_label: "لماذا ارك اكونتينج؟",
    
-    why_us_text: "  مكتب ARK Accounting  محاسبة ومراجعة، يقدم خدماته في المحاسبة والمراجعة والضرائب والاستشارات المالية، وفقًا للمعايير المهنية والتشريعات المعمول بها. نرى أن جودة المعلومات المالية هي الأساس الذي تُبنى عليه القرارات السليمة، ولذلك نحرص أن تكون خدماتنا دقيقة، مع فهم طبيعة نشاط كل عميل قبل تقديم أي رأي أو تقرير. ",
+    why_us_text: "  ارك اكونتينج مكتب متخصص في خدمات المراجعة والضرائب والاستشارات المالية وتأسيس الشركات. ننطلق في كل خدمة من فهم طبيعة نشاط العميل واحتياجاته، بما يتيح تقديم خدمات أكثر دقة وملاءمة لطبيعة كل نشاط.ويساعد هذا النهج عملاءنا على تعزيز الامتثال للمتطلبات القانونية والضريبية، واتخاذ قرارات مبنية على معلومات مالية دقي  ",
+
+
 
 why_us_cta: "اقرأ قصتنا كاملة",
 
@@ -475,17 +490,17 @@ form_error: "✗ يرجى ملء جميع الحقول المطلوبة.",
 
 
  about_story_title: "قصتنا", 
-about_ark_text: "في ARK Accounting، نلتزم بتقديم خدمات مالية متميزة بنزاهة وخبرة عالية.",
+about_ark_text: "في ارك اكونتينج، نلتزم بتقديم خدمات مالية متميزة بنزاهة وخبرة عالية.",
 about_hero_title: "من أين بدأنا",
 about_hero_text: "القاهرة، 2017. من أكبر التحديات التي تواجه أصحاب الأعمال ليس اتخاذ القرار نفسه، بل الوصول إلى معلومة مالية دقيقة يمكن الاعتماد عليها عند اتخاذه. من هذا التحدي، بدأت قصة ARK Accounting. لم يكن الهدف من تأسيس ARK Accounting أن نكون مكتب محاسبة ومراجعة آخر يقدم خدمات روتينية، بل أن نبني مكتبًا يثق به أصحاب الأعمال حين يحتاجون إلى معرفة حقيقة وضعهم المالي، بلا مجاملة وبلا تقريب.",
 
 about_who_title: "من نحن",
-about_who_text: "يضم فريق ARK Accounting نخبة من المحاسبين والمراجعين المتخصصين في مجالات المحاسبة، والمراجعة، والضرائب، والاستشارات المالية، ممن جمعوا بين التأهيل المهني والخبرة العملية مع عملاء من قطاعات متعددة. لا يقتصر دور الفريق على تنفيذ الإجراءات المحاسبية والضريبية، بل يمتد إلى فهم طبيعة كل نشاط على حدة، والتعامل مع كل ملف باعتباره حالة قائمة بذاتها لها ظروفها الخاصة، لا نموذجًا مكررًا يُطبَّق على الجميع بالطريقة نفسها.",
+about_who_text: "يضم فريق ارك اكونتينج نخبة من المحاسبين والمراجعين المتخصصين في مجالات المحاسبة، والمراجعة، والضرائب، والاستشارات المالية، ممن جمعوا بين التأهيل المهني والخبرة العملية مع عملاء من قطاعات متعددة. لا يقتصر دور الفريق على تنفيذ الإجراءات المحاسبية والضريبية، بل يمتد إلى فهم طبيعة كل نشاط على حدة، والتعامل مع كل ملف باعتباره حالة قائمة بذاتها لها ظروفها الخاصة، لا نموذجًا مكررًا يُطبَّق على الجميع بالطريقة نفسها.",
 
 about_how_title: "كيف نعمل",
 about_how_intro: "نعتمد في أعمالنا على الاستقلالية المهنية في خدمات المراجعة، والالتزام بالمعايير المهنية في جميع خدماتنا، وفهم طبيعة كل نشاط قبل تقديم أي رأي أو توصية. ولهذا، قبل تقديم أي خدمة، يحرص الفريق على دراسة الدورة المستندية للعميل، وتحديد نقاط القوة والضعف فيها، ومعرفة التفاصيل التي تميز نشاطه عن غيره.",
-about_how_accounting: "في المحاسبة، نحرص على أن تكون البيانات محدثة أولًا بأول، لا أن تُجمَّع في نهاية الفترة فقط.",
-about_how_audit: "في المراجعة، نلتزم بمعايير المراجعة المعمول بها، مع فهم حقيقي لطبيعة العمليات محل المراجعة.",
+about_how_accounting: "في المحاسبة، نحرص على أن تكون البيانات محدثة أولًا بأول， لا أن تُجمَّع في نهاية الفترة فقط.",
+about_how_audit: "في المراجعة， نلتزم بمعايير المراجعة المعمول بها， مع فهم حقيقي لطبيعة العمليات محل المراجعة.",
 about_how_tax: "في الضرائب، نتابع كل تحديث تشريعي أو إجرائي فور صدوره، بدءًا من تعديلات القانون الضريبي وصولًا إلى مستجدات منظومة الفاتورة الإلكترونية.",
 about_how_consulting: "وفي الاستشارات المالية، نقدم تحليلًا مبنيًا على بيانات العميل الفعلية، لا على افتراضات عامة.",
 
@@ -507,13 +522,13 @@ consultation_hero_subtitle: "تحدث مع خبير محاسبة وضرائب م
 
 
 faq_title: "الأسئلة الشائعة",
-faq_1_q: "ما هي الخدمات التي تقدمها ARK Accounting؟",
+faq_1_q: "ما هي الخدمات التي تقدمها ارك اكونتينج؟",
 faq_1_a: "تقدم ARK Advisory خدمات المحاسبة والمراجعة والضرائب والاستشارات المالية للشركات ورواد الأعمال في مصر، بأعلى معايير الجودة والاحترافية.",
-faq_2_q: "كيف يمكنني التواصل مع ARK Accounting؟",
-faq_2_a: "يمكنك التواصل معنا من خلال صفحة تواصل معنا، أو البريد الإلكتروني، أو رقم الهاتف الموضح على موقعنا. فريقنا جاهز دائمًا لمساعدتك.",
-faq_3_q: "ما الذي يميز ARK Accounting عن غيرها من المكاتب؟",
-faq_3_a: "تتميز ARK Accounting بالتزامها بالدقة، وفهمها العميق لطبيعة القطاعات المختلفة، وأسلوبها الذي يراعي احتياجات كل عميل الخاصة.",
-faq_4_q: "كم يستغرق إتمام عملية المراجعة؟",
+faq_2_q: "كيف يمكنني التواصل مع ارك اكونتينج？",
+faq_2_a: "يمكنك التواصل معنا من خلال صفحة تواصل معنا， أو البريد الإلكتروني， أو رقم الهاتف الموضح على موقعنا. فريقنا جاهز دائمًا لمساعدتك.",
+faq_3_q: "ما الذي يميز ارك اكونتينج عن غيرها من المكاتب？",
+faq_3_a: "تتميز ارك اكونتينج بالتزامها بالدقة， وفهمها العميق لطبيعة القطاعات المختلفة， وأسلوبها الذي يراعي احتياجات كل عميل الخاصة.",
+faq_4_q: "كم يستغرق إتمام عملية المراجعة？",
 faq_4_a: "تعتمد مدة المراجعة على حجم المنشأة ومدى تعقيد أعمالها. عادةً ما تستغرق المراجعة القياسية ما بين 2 إلى 6 أسابيع.",
 
 
@@ -734,10 +749,10 @@ terms_title: "شروط الاستخدام",
 terms_updated: "آخر تحديث: يوليو 2026",
 
 terms_intro_title: "1. مقدمة",
-terms_intro_text: "مرحبًا بك في ARK Accounting. باستخدامك لهذا الموقع، فإنك توافق على الالتزام بشروط الاستخدام هذه. إذا كنت لا توافق على أي جزء من هذه الشروط، يرجى عدم استخدام الموقع أو خدماتنا.",
+terms_intro_text: "مرحبًا بك في ارك اكونتينج. باستخدامك لهذا الموقع، فإنك توافق على الالتزام بشروط الاستخدام هذه. إذا كنت لا توافق على أي جزء من هذه الشروط، يرجى عدم استخدام الموقع أو خدماتنا.",
 
 terms_services_title: "2. الخدمات المقدمة",
-terms_services_text: "تقدم ARK Accounting خدمات المحاسبة والمراجعة والاستشارات الضريبية وتأسيس الشركات والاستشارات المالية. أي معلومات واردة في هذا الموقع هي لأغراض عامة فقط ولا تُعد استشارة مهنية. الحصول على خدماتنا الفعلية يتطلب اتفاقًا منفصلًا يحدد نطاق العمل بدقة.",
+terms_services_text: "تقدم ارك اكونتينج خدمات المحاسبة والمراجعة والاستشارات الضريبية وتأسيس الشركات والاستشارات المالية. أي معلومات واردة في هذا الموقع هي لأغراض عامة فقط ولا تُعد استشارة مهنية. الحصول على خدماتنا الفعلية يتطلب اتفاقًا منفصلًا يحدد نطاق العمل بدقة.",
 
 terms_usage_title: "3. استخدام الموقع",
 terms_usage_text: "توافق على استخدام هذا الموقع لأغراض مشروعة فقط، وبطريقة لا تنتهك حقوق الآخرين أو تعيق استخدامهم للموقع. لا يجوز استخدام الموقع لتقديم معلومات كاذبة أو مضللة.",
@@ -749,7 +764,7 @@ terms_ip_title: "5. الملكية الفكرية",
 terms_ip_text: "جميع المحتويات الموجودة على هذا الموقع، بما في ذلك النصوص والشعارات والتصميم، هي ملك لشركة ARK Accounting ولا يجوز إعادة إنتاجها أو استخدامها دون موافقة خطية مسبقة.",
 
 terms_liability_title: "6. حدود المسؤولية",
-terms_liability_text: "لا تتحمل ARK Accounting المسؤولية عن أي أضرار غير مباشرة أو عرضية أو تبعية ناتجة عن استخدام هذا الموقع أو الاعتماد على المعلومات الواردة فيه، وذلك في الحدود التي يسمح بها القانون المعمول به.",
+terms_liability_text: "لا تتحمل ارك اكونتينج المسؤولية عن أي أضرار غير مباشرة أو عرضية أو تبعية ناتجة عن استخدام هذا الموقع أو الاعتماد على المعلومات الواردة فيه، وذلك في الحدود التي يسمح بها القانون المعمول به.",
 
 terms_changes_title: "7. التعديلات على هذه الشروط",
 terms_changes_text: "يجوز لنا تحديث شروط الاستخدام هذه من وقت لآخر. استمرار استخدام الموقع بعد نشر أي تعديلات يُعد قبولًا بالشروط المُحدَّثة.",
@@ -763,7 +778,7 @@ privacy_title: "سياسة الخصوصية",
 privacy_updated: "آخر تحديث: يوليو 2026",
 
 privacy_intro_title: "1. مقدمة",
-privacy_intro_text: "تحترم ARK Accounting (\"نحن\") خصوصيتك وتلتزم بحماية بياناتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمعنا واستخدامنا وحمايتنا للمعلومات عند زيارتك لموقعنا أو طلب خدماتنا.",
+privacy_intro_text: "تحترم ارك اكونتينج (\"نحن\") خصوصيتك وتلتزم بحماية بياناتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمعنا واستخدامنا وحمايتنا للمعلومات عند زيارتك لموقعنا أو طلب خدماتنا.",
 
 privacy_collect_title: "2. المعلومات التي نجمعها",
 privacy_collect_text: "عند تعبئة نموذج الاستشارة أو التواصل معنا، قد نجمع اسمك ورقم هاتفك وبريدك الإلكتروني وتفاصيل عن نشاطك التجاري أو استفسارك. لا نقوم بجمع بيانات مالية حساسة عبر الموقع نفسه.",
@@ -789,8 +804,10 @@ privacy_contact_text: "لأي استفسارات بخصوص سياسة الخص�
 
 footer_tagline: "أرقام دقيقة.قرارات موثوقة.",
 
+
+footer_brand: "ارك اكونتينج",
 footer_contact_title: "تواصل معنا",
-footer_phone: "+20 102 1024 125",
+footer_phone: "+20 10 12510242",
 footer_email: "asmaa.abdelsalam@ark-accounting.org",
 footer_follow_title: "تابعنا",
 footer_services_title: "خدماتنا",
@@ -804,7 +821,7 @@ footer_link_about: "من نحن",
 footer_link_services: "خدماتنا",
 footer_link_industries: "الصناعات",
 footer_link_contact: "تواصل معنا",
-footer_copyright: "ARK Accounting والاستشارات الضريبية. جميع الحقوق محفوظة ٢٠٢٦ ©",
+footer_copyright: "ارك اكونتينج والاستشارات الضريبية. جميع الحقوق محفوظة ٢٠٢٦ ©",
 footer_copyright: "Ark Accounting & Tax Advisory. All rights reserved 2026 ©",
 footer_privacy: "الخصوصية",
 footer_terms: "الشروط",
@@ -820,6 +837,24 @@ services_audit: "المراجعة",
 services_tax: "الضرائب",
 services_consulting: "الاستشارات المالية",
 services_formation: "تأسيس الشركات",
-services_subheading: "نقدم مجموعة متكاملة من الخدمات المحاسبية والضريبية والاستشارية، لمساعدة الشركات على إدارة أعمالها بكفاءة والالتزام بالمتطلبات المالية والضريبية."
-  },
+services_subheading: "نقدم مجموعة متكاملة من الخدمات المحاسبية والضريبية والاستشارية، لمساعدة الشركات على إدارة أعمالها بكفاءة والالتزام بالمتطلبات المالية والضريبية.",
+ 
+contact_title: "تواصل معنا",
+contact_intro: "للاستفسارات أو طلب مزيد من المعلومات حول خدماتنا، يمكنكم التواصل معنا عبر الهاتف أو واتساب أو فيسبوك، كما يمكنكم إرسال رسالتكم مباشرة من خلال نموذج التواصل، وسنقوم بالرد عليكم في أقرب وقت ممكن.",
+contact_address: "المكتب الرئيسي: [العنوان هنا]",
+contact_hotline: "الخط الساخن: 19818",
+contact_social_title: "تابعنا",
+contact_form_title: "عندك سؤال؟ تواصل معنا",
+contact_form_subtitle: "اكتب بياناتك ورسالتك تحت وهنرد عليك في خلال 24 ساعة.",
+contact_form_name: "الاسم",
+contact_form_email: "البريد الإلكتروني",
+contact_form_message: "رسالتك",
+contact_form_submit: "إرسال",
+contact_form_sending: "جاري الإرسال...",
+contact_form_sent: "تم الإرسال بنجاح",
+
+
+
+
+},
 };

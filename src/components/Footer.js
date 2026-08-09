@@ -30,7 +30,7 @@ export default function Footer() {
           <Link href="/" className="flex items-center gap-3">
            <Image src="/logo.png" alt="Ark Logo" width={140} height={140} priority />
             <div className="flex flex-col">
-              <span className="text-3xl font-extrabold text-white tracking-wide">ARK Accounting</span>
+              <span className="text-3xl font-extrabold text-white tracking-wide">{t("footer_brand")}</span>
               <p className="text-white font-medium leading-relaxed text-xs mt-1">
                 {t("footer_tagline")}
               </p>

@@ -24,48 +24,56 @@ export default function IndustriesPage() {
       icon: ShoppingCart,
       image: "/trade.png.jpeg",
       description: t("industry_trade_desc"),
+      id: "trade"
     },
     {
       title: t("industry_ecommerce_title"),
       icon: Store,
       image: "/e-commerce.png.png",
       description: t("industry_ecommerce_desc"),
+      id: "ecommerce"
     },
     {
       title: t("industry_tourism_title"),
       icon: Plane,
       image: "/tourism.png.jpeg",
       description: t("industry_tourism_desc"),
+      id: "tourism"
     },
     {
       title: t("industry_manufacturing_title"),
       icon: Factory,
       image: "/manufacture.png.jpeg",
       description: t("industry_manufacturing_desc"),
+      id: "manufacturing"
     },
     {
       title: t("industry_contracting_title"),
       icon: Building2,
       image: "/construction.png.jpeg",
       description: t("industry_contracting_desc"),
+      id: "contracting"
     },
     {
       title: t("industry_pharma_title"),
       icon: Pill,
       image: "/pharma.ser.png.jpeg",
       description: t("industry_pharma_desc"),
+      id: "pharma"
     },
     {
       title: t("industry_restaurants_title"),
       icon: UtensilsCrossed,
       image: "/resturant.png.png",
       description: t("industry_restaurants_desc"),
+      id: "restaurants"
     },
     {
       title: t("industry_import_export_title"),
       icon: Ship,
       image: "/import.png.png",
       description: t("industry_import_export_desc"),
+      id: "import_export"
     },
   ];
 
@@ -105,8 +113,9 @@ export default function IndustriesPage() {
 
           return (
             <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 70 }}
+  key={item.id}
+  id={item.id}
+  initial={{ opacity: 0, y: 70 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}

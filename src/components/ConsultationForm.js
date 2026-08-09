@@ -39,6 +39,7 @@ export default function ConsultationForm({ preselect = "" }) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
+        from_name: "ARK Accounting",
       });
 
       if (res.ok) {

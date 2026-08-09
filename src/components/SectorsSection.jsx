@@ -18,34 +18,42 @@ export default function SectorsSection() {
 
   const industries = [
     {
+      slug: "trade",
       title: t("industry_trade_title"),
       icon: ShoppingCart,
     },
     {
+      slug: "ecommerce",
       title: t("industry_ecommerce_title"),
       icon: Store,
     },
     {
+      slug: "tourism",
       title: t("industry_tourism_title"),
       icon: Plane,
     },
     {
+      slug: "manufacturing",
       title: t("industry_manufacturing_title"),
       icon: Factory,
     },
     {
+      slug: "contracting",
       title: t("industry_contracting_title"),
       icon: Building2,
     },
     {
+      slug: "pharma",
       title: t("industry_pharma_title"),
       icon: Pill,
     },
     {
+      slug: "restaurants",
       title: t("industry_restaurants_title"),
       icon: UtensilsCrossed,
     },
     {
+      slug: "import_export",
       title: t("industry_import_export_title"),
       icon: Ship,
     },
@@ -72,8 +80,8 @@ export default function SectorsSection() {
           const Icon = industry.icon;
           return (
             <Link
-              key={industry.title}
-              href="/industries"
+              key={industry.slug}
+              href={`/industries#${industry.slug}`}
               className="group flex flex-col items-center justify-center text-center h-full bg-white rounded-2xl p-8 border-2 border-[#D4A94F] hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               <div className="w-14 h-14 rounded-xl bg-[#D4A94F]/10 flex items-center justify-center mb-4">
