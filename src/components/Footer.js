@@ -76,7 +76,7 @@ export default function Footer() {
             </p>
             <p className="flex items-center gap-2.5">
   <svg className="w-6 h-6 text-gold shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-  <span dir="ltr" className="whitespace-nowrap text-xs sm:text-sm lg:text-base">{t("footer_email")}</span>
+ <span dir="ltr" className="whitespace-nowrap text-[11px] sm:text-xs lg:text-sm">{t("footer_email")}</span>
 </p>
           </div>
           <h4 className="text-gold font-bold text-lg mb-3 capitalize">{t("footer_follow_title")}</h4>
