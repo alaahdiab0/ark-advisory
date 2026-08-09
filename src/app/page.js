@@ -14,7 +14,7 @@ const fadeUp = {
 };
 
 export default function HomePage() {
-  const { t } = useLanguage();
+ const { t, lang } = useLanguage();
   return (
     <>
       {/* ── HERO SECTION ── */}
@@ -60,11 +60,12 @@ export default function HomePage() {
             
             <div className="w-16 h-1 bg-gold mx-auto mt-4 rounded" />
             <p
-              className="text-text-secondary mt-6 max-w-5xl mx-auto px-6 leading-8 text-lg"
-              style={{ textAlign: "justify" }}
-            >
-              {t("why_us_text")}
-            </p>
+  dir={lang === "ar" ? "rtl" : "ltr"}
+  className="text-text-secondary mt-6 max-w-5xl mx-auto px-6 leading-8 text-lg"
+  style={{ textAlign: "justify" }}
+>
+  {t("why_us_text")}
+</p>
 
             <div className="text-center mt-8">
               <Link href="/about" className="inline-block bg-[#C8A74E] text-white px-10 py-4 rounded-full font-semibold hover:bg-[#b38b2d] transition">
@@ -78,7 +79,6 @@ export default function HomePage() {
 
       {/* ── SECTORS SECTION ── */}
      
-          
 <SectorsSection />
     </>
   );

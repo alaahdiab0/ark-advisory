@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 export default function SectorsSection() {
-  const { t } = useLanguage();
+const { t, lang } = useLanguage();
 
   const industries = [
     {
@@ -60,7 +60,7 @@ export default function SectorsSection() {
   ];
 
   return (
-    <section className="bg-[#F0EAD9] py-24" dir="rtl">
+    <section id="industries" className="bg-[#F0EAD9] py-24" dir="rtl">
       <div className="max-w-5xl mx-auto text-center px-6">
         <p className="uppercase tracking-[4px] text-sm font-semibold text-[#D4A94F]">
           {t("sectors_badge")}
@@ -70,9 +70,9 @@ export default function SectorsSection() {
           {t("sectors_title")}
         </h2>
 
-        <p className="text-gray-600 leading-relaxed mt-6 max-w-3xl mx-auto">
-          {t("sectors_description")}
-        </p>
+        <p dir={lang === "ar" ? "rtl" : "ltr"} className="text-gray-600 leading-relaxed mt-6 max-w-3xl mx-auto">
+  {t("sectors_description")}
+</p>
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 px-6">

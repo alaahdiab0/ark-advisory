@@ -11,8 +11,7 @@ import {
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Services() {
-  const { t } = useLanguage();
-
+const { t, lang } = useLanguage();
   const services = [
     {
       title: t("service_audit"),
@@ -39,7 +38,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      dir="rtl"
+      dir={lang === "ar" ? "rtl" : "ltr"}
       className="relative py-20 px-6 bg-[#FBF6EC]"
     >
       <div className="max-w-6xl mx-auto text-center mb-14">

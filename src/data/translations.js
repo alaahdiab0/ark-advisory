@@ -402,7 +402,7 @@ services_audit: "Audit",
 services_tax: "Tax",
 services_consulting: "Financial Consulting",
 services_formation: "Company Formation",
-services_subheading: "We provide a comprehensive range of accounting, tax, and consulting services, helping companies manage their business efficiently and comply with financial and tax requirements.",
+services_subheading: " We provide a comprehensive range of accounting, tax, and consulting services, helping companies manage their business efficiently and comply with financial and tax requirements.",
 
 
 contact_title: "Contact Us",
@@ -441,7 +441,7 @@ contact_form_sent: "Sent successfully",
 
     why_us_label: "لماذا ارك اكونتينج؟",
    
-    why_us_text: " ارك اكونتينج مكتب متخصص في خدمات المراجعة والضرائب والاستشارات المالية وتأسيس الشركات. ننطلق في كل خدمة من فهم طبيعة نشاط العميل واحتياجاته، بما يتيح تقديم خدمات أكثر دقة وملاءمة لطبيعة كل نشاط.ويساعد هذا النهج عملاءنا على تعزيز الامتثال للمتطلبات القانونية والضريبية، واتخاذ قرارات مبنية على معلومات مالية دقيقه   ",
+    why_us_text: " ارك اكونتينج مكتب متخصص في خدمات المراجعة والضرائب والاستشارات المالية وتأسيس الشركات. ننطلق في كل خدمة من فهم طبيعة نشاط العميل واحتياجاته، بما يتيح تقديم خدمات أكثر دقة وملاءمة لطبيعة كل نشاط.ويساعد هذا النهج عملاءنا على تعزيز الامتثال للمتطلبات القانونية والضريبية، واتخاذ قرارات مبنية على معلومات مالية دقيقه .  ",
 
 
 
