@@ -371,7 +371,7 @@ privacy_contact_title: "8. Contact Us",
 privacy_contact_text: "If you have any questions about this Privacy Policy or how your data is handled, please contact us at",
 
 footer_brand: "ARK Accounting ",
-footer_tagline: "Precision in Numbers, Trusted Decisions",
+footer_tagline: "Precision Numbers, Trusted Decisions",
 footer_contact_title: "Contact Us",
 footer_phone: "+20 10 12510242",
 footer_email: "asmaa.abdelsalam@ark-accounting.org",
