@@ -28,17 +28,17 @@ export default function ConsultationForm({ preselect = "" }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // نقرأ القيم مباشرة من عناصر الفورم بدل الاعتماد الكامل على state،
-    // عشان نتفادى مشكلة الـ autofill على الموبايل اللي أحياناً بيملأ
-    // الحقل بصريًا من غير ما يطلق onChange فيفضل formData فاضي.
-    const form = e.target;
+    // بنستخدم FormData API بدل الوصول المباشر بالاسم (form.name.value)
+    // عشان "name" بتتعارض مع property أصلية في HTMLFormElement نفسه،
+    // وده كان بيسبب فشل صامت في السبمشن (خصوصاً مع autofill على الموبايل).
+    const fd = new FormData(e.target);
     const liveData = {
-      name: form.name.value.trim(),
-      phone: form.phone.value.trim(),
-      email: form.email.value.trim(),
-      company: form.company.value.trim(),
-      service: form.service.value,
-      message: form.message.value.trim(),
+      name: (fd.get("name") || "").trim(),
+      phone: (fd.get("phone") || "").trim(),
+      email: (fd.get("email") || "").trim(),
+      company: (fd.get("company") || "").trim(),
+      service: fd.get("service") || "",
+      message: (fd.get("message") || "").trim(),
     };
 
     if (!liveData.name || !liveData.phone || !liveData.email || !liveData.service) {
@@ -214,3 +214,4 @@ export default function ConsultationForm({ preselect = "" }) {
     </motion.div>
   );
 }
+ؤاش
