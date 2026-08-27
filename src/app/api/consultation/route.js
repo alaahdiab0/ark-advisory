@@ -11,8 +11,8 @@ export async function POST(request) {
       return Response.json({ error: 'البيانات ناقصة' }, { status: 400 });
     }
 
-    await resend.emails.send({
-      from:  'Ark Accounting <noreply@ark-accounting.org>',
+    const { data, error } = await resend.emails.send({
+      from: 'Ark Accounting <noreply@ark-accounting.org>',
       to: 'asmaa.abdelsalam@ark-accounting.org',
       subject: `طلب استشارة جديد من ${name} - Ark Accounting`,
       html: `
@@ -27,8 +27,17 @@ export async function POST(request) {
       `,
     });
 
-    return Response.json({ success: true }, { status: 200 });
+    // Resend بيرجع الخطأ كـ object جوه الـ response نفسه، مش دايمًا بيرمي exception
+    // فلازم نتأكد منه صراحةً بدل ما نعتمد بس على try/catch
+    if (error) {
+      console.error('Resend error:', error);
+      return Response.json({ error: error.message || 'فشل إرسال الإيميل' }, { status: 500 });
+    }
+
+    return Response.json({ success: true, id: data?.id }, { status: 200 });
   } catch (error) {
-    return Response.json({ error: 'حصل خطأ، حاول تاني' }, { status: 500 });
+    // اطبع الخطأ الحقيقي في Vercel logs عشان تقدر تشوفه بالظبط
+    console.error('API /consultation error:', error);
+    return Response.json({ error: error?.message || 'حصل خطأ، حاول تاني' }, { status: 500 });
   }
 }
