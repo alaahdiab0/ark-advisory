@@ -11,6 +11,25 @@ const serviceOptions = [
   { value: "formation", labelKey: "service_formation" },
 ];
 
+// تحقق من رقم الموبايل المصري: يبدأ بـ 010 أو 011 أو 012 أو 015 ويتكون من 11 رقم
+const validateEgyptPhone = (phone) => {
+  // شيل المسافات والشرطات، ولو موجود قوس بيني على الكود (+20) شيله برضو
+  let cleaned = phone.replace(/[\s()-]/g, "");
+
+  // لو الرقم مكتوب بصيغة دولية +20 أو 0020، حوّله للصيغة المحلية (يبدأ بـ 0)
+  if (cleaned.startsWith("+20")) {
+    cleaned = "0" + cleaned.slice(3);
+  } else if (cleaned.startsWith("0020")) {
+    cleaned = "0" + cleaned.slice(4);
+  } else if (cleaned.startsWith("20") && cleaned.length === 12) {
+    // حالة زي 201028406679 من غير + أو 00
+    cleaned = "0" + cleaned.slice(2);
+  }
+
+  const egyptPhoneRegex = /^01[0125][0-9]{8}$/;
+  return egyptPhoneRegex.test(cleaned);
+};
+
 export default function ConsultationForm({ preselect = "" }) {
   const { t, lang } = useLanguage();
   const router = useRouter();
@@ -20,9 +39,15 @@ export default function ConsultationForm({ preselect = "" }) {
     service: preselect || "", message: "",
   });
   const [status, setStatus] = useState(null); // 'loading' | 'error'
+  const [phoneError, setPhoneError] = useState("");
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+
+    if (name === "phone" && phoneError) {
+      setPhoneError(""); // امسح رسالة الخطأ أول ما يبدأ يعدّل الرقم
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -45,6 +70,16 @@ export default function ConsultationForm({ preselect = "" }) {
       setStatus("error");
       return;
     }
+
+    // تحقق من رقم الموبايل قبل أي إرسال
+    if (!validateEgyptPhone(liveData.phone)) {
+      setPhoneError(
+        t("form_phone_invalid") ||
+          "من فضلك أدخل رقم موبايل مصري صحيح (يبدأ بـ 010 أو 011 أو 012 أو 015 ويتكون من 11 رقم)"
+      );
+      return;
+    }
+    setPhoneError("");
 
     setStatus("loading");
 
@@ -106,8 +141,15 @@ export default function ConsultationForm({ preselect = "" }) {
               onChange={handleChange}
               required
               placeholder={t("form_phone_placeholder")}
-              className="w-full px-4 py-3 bg-beige border border-glass-border rounded-lg text-navy placeholder-text-muted focus:border-gold focus:ring-2 focus:ring-gold/20 outline-none transition-all text-sm"
+              className={`w-full px-4 py-3 bg-beige border rounded-lg text-navy placeholder-text-muted focus:ring-2 outline-none transition-all text-sm ${
+                phoneError
+                  ? "border-red-400 focus:border-red-400 focus:ring-red-200"
+                  : "border-glass-border focus:border-gold focus:ring-gold/20"
+              }`}
             />
+            {phoneError && (
+              <p className="mt-1.5 text-xs font-semibold text-red-600">{phoneError}</p>
+            )}
           </div>
         </div>
 

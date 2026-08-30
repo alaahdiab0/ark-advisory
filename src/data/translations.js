@@ -29,7 +29,7 @@ why_us_cta: "Read Our Full Story",
     footer_services: "Services",
     footer_contact: "Contact Us",
     footer_follow: "Follow Us",
-    footer_rights: "© 2026 Ark Accounting & Tax Advisory. All rights reserved.",
+    footer_rights: "© 2026 Ark Accounting & Tax. All rights reserved.",
 
 
     consultation_form_title: "Request Your  Consultation Now",
@@ -74,7 +74,7 @@ consultation_hero_subtitle: "Speak with an accounting and tax expert for free ab
 
 faq_title: "FAQ",
 faq_1_q: "What services does ARK Accounting offer?",
-faq_1_a: "ARK Advisory provides accounting, auditing, tax, and financial consulting services for businesses and entrepreneurs in Egypt, delivered to the highest standards of quality and professionalism.",
+faq_1_a: "ARK Accounting provides accounting, auditing, tax, and financial consulting services for businesses and entrepreneurs in Egypt, delivered to the highest standards of quality and professionalism.",
 faq_2_q: "How can I get in touch with ARK Accounting?",
 faq_2_a: "You can reach out to us through our contact page, email, or phone number listed on our website. Our team is always ready to assist you.",
 faq_3_q: "What makes ARK Accounting different from other firms?",
@@ -418,6 +418,9 @@ contact_form_message: "Message",
 contact_form_submit: "Submit",
 contact_form_sending: "Sending...",
 contact_form_sent: "Sent successfully",
+
+
+form_phone_invalid: "Please enter a valid phone number.",
 
   },
   ar: {
@@ -854,7 +857,6 @@ contact_form_sending: "جاري الإرسال...",
 contact_form_sent: "تم الإرسال بنجاح",
 
 
-
-
+form_phone_invalid: "الرجاء إدخال رقم هاتف صحيح",
 },
 };
