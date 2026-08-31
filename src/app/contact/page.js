@@ -77,11 +77,16 @@ export default function ContactPage() {
                 <MessageCircle className="w-5 h-5 text-[#D4A94F]" />
               </span>
               <a
-                href="https://wa.me/201012510242"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#1E2233] font-medium"
-              >
+  href="https://wa.me/201012510242"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-[#1E2233] font-medium"
+  onClick={() =>
+    trackEvent("whatsapp_click", {
+      location: "contact_page",
+    })
+  }
+>
                 +20 10 12510242
               </a>
             </div>
@@ -90,8 +95,15 @@ export default function ContactPage() {
               <span className="w-10 h-10 flex-shrink-0 rounded-full bg-[#D4A94F]/10 flex items-center justify-center">
                 <Mail className="w-5 h-5 text-[#D4A94F]" />
               </span>
-              <a href="mailto:asmaa.abdelsalam@ark-accounting.org" className="text-[#1E2233] font-medium">
-                asmaa.abdelsalam@ark-accounting.org
+              <a
+  href="mailto:asmaa.abdelsalam@ark-accounting.org"
+  className="text-[#1E2233] font-medium"
+  onClick={() =>
+    trackEvent("email_click", {
+      location: "contact_page",
+    })
+  }
+>
               </a>
             </div>
           </div>

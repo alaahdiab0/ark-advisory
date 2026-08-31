@@ -89,8 +89,12 @@ export default function ConsultationForm({ preselect = "" }) {
       });
 
       if (res.ok) {
-        trackEvent("contact_form_submit");
-        router.push("/thank-you");
+  trackEvent("consultation_submit", {
+    service: liveData.service,
+  });
+
+  router.push("/thank-you");
+
       } else {
         setStatus("error");
       }
