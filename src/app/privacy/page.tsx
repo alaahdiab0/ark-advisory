@@ -64,7 +64,7 @@ export default function TermsPage() {
           <h2 className="text-2xl font-bold text-[#082347] mb-3">{t("privacy_contact_title")}</h2>
           <p>
             {t("privacy_contact_text")}{" "}
-            <a href="mailto:info@ark-advisory.com" className="text-[#C9A14A] font-semibold">
+            <a href="mailto:info@ark-accounting.org" className="text-[#C9A14A] font-semibold">
               asmaa.abdelsalam@ark-accounting.org
             </a>.
           </p>

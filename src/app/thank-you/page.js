@@ -24,14 +24,14 @@ export default function ThankYouPage() {
           <>
             <h1 className=" text-navy text-3xl font-bold mb-3">تم استلام رسالتك بنجاح</h1>
             <p className="text-navy mb-8">
-              شكراً لتواصلك مع Ark Advisory، هيتم الرد عليك في أقرب وقت.
+              شكراً لتواصلك مع Ark Accounting، هيتم الرد عليك في أقرب وقت.
             </p>
           </>
         ) : (
           <>
             <h1 className="text-navy text-3xl font-bold mb-3">Thank You for Reaching Out</h1>
             <p className="text-navy mb-8">
-              We've received your message. Our team at Ark Advisory will get back to you shortly.
+              We've received your message. Our team at Ark Accounting will get back to you shortly.
             </p>
           </>
         )}

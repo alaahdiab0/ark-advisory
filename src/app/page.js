@@ -21,7 +21,7 @@ export default function HomePage() {
       <section id="home" className="relative w-full h-screen min-h-[600px] overflow-hidden">
         <div className="absolute inset-0">
 
-          <Image src="/hero.png.jpeg" alt="Ark Advisory" fill className="object-cover" priority />
+          <Image src="/hero.png.jpeg" alt="Ark Accounting" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-black/30 z-[1]" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-[1]" />
 

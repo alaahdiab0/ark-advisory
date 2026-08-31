@@ -68,7 +68,7 @@ export default function TermsPage() {
             {t("terms_contact_text")}
            
           </p>
-          <a href="mailto:info@ark-advisory.com" className="text-[#C9A14A] font-semibold">
+          <a href="mailto:info@ark-accounting.org" className="text-[#C9A14A] font-semibold">
               asmaa.abdelsalam@ark-accounting.org
             </a>.
         </section>

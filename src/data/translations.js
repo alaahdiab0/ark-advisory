@@ -305,7 +305,7 @@ connect_form_title: "Fill out the form below to request a consultation on our Au
 
   industries_hero_badge: "Industries We Serve",
 industries_hero_title: "Tailored Solutions for Every Industry",
-industries_hero_text: "Every industry has unique financial challenges. We deliver specialized accounting, tax, and advisory solutions designed to help businesses grow with confidence.",
+industries_hero_text: "Every industry has unique financial challenges. We deliver specialized accounting, tax, and financial solutions designed to help businesses grow with confidence.",
 industries_cta_badge: " Let's Grow Together",
 industries_cta_title: " Looking for Industry-Specific Financial Solutions?",
 industries_cta_text: " Our experts understand the unique financial and tax challenges  across different industries. Let us help you build a stronger, more compliant business.",
@@ -321,7 +321,7 @@ terms_intro_title: "1. Introduction",
 terms_intro_text: "Welcome to ARK Accounting. By accessing or using our website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our website or services.",
 
 terms_services_title: "2. Services Provided",
-terms_services_text: "ARK Accounting provides accounting, auditing, tax advisory, company formation, and financial consulting services. Any information provided on this website is for general informational purposes only and does not constitute professional advice. Engagement of our services requires a separate agreement outlining the specific scope of work.",
+terms_services_text: "ARK Accounting provides accounting, auditing, tax services, company formation, and financial consulting services. Any information provided on this website is for general informational purposes only and does not constitute professional advice. Engagement of our services requires a separate agreement outlining the specific scope of work.",
 
 terms_usage_title: "3. Use of the Website",
 terms_usage_text: "You agree to use this website only for lawful purposes and in a manner that does not infringe the rights of, restrict, or inhibit anyone else's use of the site. You may not use this website to submit false or misleading information.",
@@ -387,7 +387,7 @@ footer_link_about: "About Us",
 footer_link_services: "Services",
 footer_link_industries: "Industries",
 footer_link_contact: "Contact Us",
-footer_copyright: "Ark Accounting & Tax Advisory. All rights reserved 2026 ©",
+footer_copyright: "Ark Accounting & Tax services. All rights reserved 2026 ©",
 footer_privacy: "privacy",
 footer_terms: "terms",
 
@@ -525,8 +525,8 @@ consultation_hero_subtitle: "تحدث مع خبير محاسبة وضرائب م
 
 
 faq_title: "الأسئلة الشائعة",
-faq_1_q: "ما هي الخدمات التي تقدمها ارك اكونتينج؟",
-faq_1_a: "تقدم ARK Advisory خدمات المحاسبة والمراجعة والضرائب والاستشارات المالية للشركات ورواد الأعمال في مصر، بأعلى معايير الجودة والاحترافية.",
+faq_1_q: "ما هي الخدمات التي تقدمها ارك اكونتينج？",
+faq_1_a: "تقدم ARK Accounting خدمات المحاسبة والمراجعة والضرائب والاستشارات المالية للشركات ورواد الأعمال في مصر، بأعلى معايير الجودة والاحترافية.",
 faq_2_q: "كيف يمكنني التواصل مع ارك اكونتينج？",
 faq_2_a: "يمكنك التواصل معنا من خلال صفحة تواصل معنا， أو البريد الإلكتروني， أو رقم الهاتف الموضح على موقعنا. فريقنا جاهز دائمًا لمساعدتك.",
 faq_3_q: "ما الذي يميز ارك اكونتينج عن غيرها من المكاتب？",
@@ -825,7 +825,7 @@ footer_link_services: "خدماتنا",
 footer_link_industries: "القطاعات",
 footer_link_contact: "تواصل معنا",
 footer_copyright: "ارك اكونتينج والاستشارات الضريبية. جميع الحقوق محفوظة ٢٠٢٦ ©",
-footer_copyright: "Ark Accounting & Tax Advisory. All rights reserved 2026 ©",
+footer_copyright: "Ark Accounting & Tax Services. All rights reserved 2026 ©",
 footer_privacy: "الخصوصية",
 footer_terms: "الشروط",
 
