@@ -1,4 +1,6 @@
 "use client";
+
+import { trackEvent } from "@/lib/analytics";
 import { useLanguage } from "@/context/LanguageContext";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -13,16 +15,13 @@ const serviceOptions = [
 
 // تحقق من رقم الموبايل المصري: يبدأ بـ 010 أو 011 أو 012 أو 015 ويتكون من 11 رقم
 const validateEgyptPhone = (phone) => {
-  // شيل المسافات والشرطات، ولو موجود قوس بيني على الكود (+20) شيله برضو
   let cleaned = phone.replace(/[\s()-]/g, "");
 
-  // لو الرقم مكتوب بصيغة دولية +20 أو 0020، حوّله للصيغة المحلية (يبدأ بـ 0)
   if (cleaned.startsWith("+20")) {
     cleaned = "0" + cleaned.slice(3);
   } else if (cleaned.startsWith("0020")) {
     cleaned = "0" + cleaned.slice(4);
   } else if (cleaned.startsWith("20") && cleaned.length === 12) {
-    // حالة زي 201028406679 من غير + أو 00
     cleaned = "0" + cleaned.slice(2);
   }
 
@@ -46,16 +45,13 @@ export default function ConsultationForm({ preselect = "" }) {
     setFormData((prev) => ({ ...prev, [name]: value }));
 
     if (name === "phone" && phoneError) {
-      setPhoneError(""); // امسح رسالة الخطأ أول ما يبدأ يعدّل الرقم
+      setPhoneError("");
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // بنستخدم FormData API بدل الوصول المباشر بالاسم (form.name.value)
-    // عشان "name" بتتعارض مع property أصلية في HTMLFormElement نفسه،
-    // وده كان بيسبب فشل صامت في السبمشن (خصوصاً مع autofill على الموبايل).
     const fd = new FormData(e.target);
     const liveData = {
       name: (fd.get("name") || "").trim(),
@@ -71,7 +67,6 @@ export default function ConsultationForm({ preselect = "" }) {
       return;
     }
 
-    // تحقق من رقم الموبايل قبل أي إرسال
     if (!validateEgyptPhone(liveData.phone)) {
       setPhoneError(
         t("form_phone_invalid") ||
@@ -94,6 +89,7 @@ export default function ConsultationForm({ preselect = "" }) {
       });
 
       if (res.ok) {
+        trackEvent("contact_form_submit");
         router.push("/thank-you");
       } else {
         setStatus("error");

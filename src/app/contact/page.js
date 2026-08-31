@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import { trackEvent } from "@/lib/analytics";
 import {
   MapPin,
   Headphones,
@@ -43,6 +44,8 @@ export default function ContactPage() {
       const result = await response.json();
 
       if (result.success) {
+        // بنسجّل الحدث هنا بس، بعد التأكد إن web3forms استلم الرسالة فعلاً
+        trackEvent("contact_form_submit");
         setStatus("sent");
         setForm({ name: "", email: "", message: "" });
       } else {
