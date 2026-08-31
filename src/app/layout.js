@@ -1,7 +1,7 @@
 
 
 
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -65,6 +65,7 @@ export default function RootLayout({ children }) {
           <Footer />
         </LanguageProvider>
       </body>
+      <GoogleAnalytics gaId="G-Y3X70B3W5T" />
     </html>
   );
 }
