@@ -24,7 +24,7 @@ const cairo = Cairo({
 });
 
 export const metadata = {
-  title: "ARK Accounting | Accounting, Audit & Tax Advisory in Egypt",
+  title: "ARK Accounting | Accounting & Tax Services for Businesses in Egypt",
   description:
     "ARK Accounting provides accounting, auditing, tax, and financial consulting services across diverse industries in Egypt — precision in numbers, security in decisions.",
 };
