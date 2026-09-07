@@ -14,9 +14,9 @@ export const translations = {
     hero_badge: "Ark Accounting",
     hero_title_line1: "Precise Numbers",
     hero_title_line2: "Trusted Decisions",
+    hero_subtitle: "Accounting & Audit Services in Cairo, Egypt",
     
     hero_cta_primary: "Book Free Consultation",
-    
 
     why_us_label: "Why Ark?",
   
@@ -438,7 +438,7 @@ form_phone_invalid: "Please enter a valid phone number.",
     hero_badge: "ارك اكونتينج",
     hero_title_line1: "أرقام دقيقة.",
     hero_title_line2: "قرارات موثوقة.",
-    hero_subtitle: "نمكّن الشركات بخدمات محاسبية وضريبية واستشارية متطورة في جميع القطاعات.",
+   hero_subtitle: "خدمات محاسبة ومراجعة في القاهرة، مصر",
     hero_cta_primary: "احجز استشارة مجانية",
     
 
